@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +12,8 @@
 
 <style>
 :root{--bg:#070b12;--panel:#101827;--card:#172033;--text:#e5e7eb;--muted:#a8b3c7;--blue:#38bdf8;--green:#22c55e;--border:#273449}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 18% 8%,rgba(37,99,235,.22),transparent 32%),radial-gradient(circle at 85% 20%,rgba(56,189,248,.11),transparent 28%),linear-gradient(180deg,#070b12,#0b1220 55%,#070b12);color:var(--text)}
 .wrap{max-width:1160px;margin:auto;padding:42px 22px 30px}
 .hero,.block{border:1px solid var(--border);background:linear-gradient(135deg,rgba(17,24,39,.98),rgba(15,23,42,.96));border-radius:28px;padding:42px;box-shadow:0 25px 80px rgba(0,0,0,.35);margin-bottom:28px}
@@ -67,24 +69,36 @@ ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.75}
   </p>
 
   <div class="btns">
-    <a class="btn primary" href="https://www.linkedin.com/in/tihomir-borisov-310467132/" target="_blank">LinkedIn</a>
-    <a class="btn" href="https://github.com/TimiBorisov" target="_blank">GitHub</a>
+    <a class="btn primary" href="https://www.linkedin.com/in/tihomir-borisov-310467132/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn" href="https://github.com/TimiBorisov" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a class="btn" href="cv.html">CV</a>
   </div>
 </section>
 
 <section class="block">
-  <h2>Representative Experience</h2>
+  <h2>Areas of Expertise</h2>
   <div class="grid">
-    <div class="card"><h3>Secure SDLC Enablement</h3><p>Embedding security earlier in the software lifecycle through requirements, threat modelling, automated checks and practical remediation guidance.</p></div>
-    <div class="card"><h3>CI/CD Security</h3><p>Supporting security testing in pipelines using SAST, DAST, SCA, secret detection and security gates for safer software delivery.</p></div>
-    <div class="card"><h3>Cloud & IAM Security</h3><p>Working across cloud environments and identity systems to support secure configuration, access control and operational resilience.</p></div>
+    <div class="card">
+      <h3>Secure SDLC Enablement</h3>
+      <p>Embedding security earlier in the software lifecycle through secure design, threat modelling, automated testing and practical remediation guidance.</p>
+    </div>
+
+    <div class="card">
+      <h3>CI/CD Security</h3>
+      <p>Integrating SAST, DAST, SCA, secret detection and security gates into delivery pipelines to support safer software releases.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud & IAM Security</h3>
+      <p>Supporting secure configuration, identity controls, access management and operational resilience across cloud and enterprise environments.</p>
+    </div>
   </div>
 </section>
 
 <section class="block">
-  <h2>Example CI/CD Security Workflow</h2>
-  <p class="small">Generic workflow, safe to share publicly. No company systems, names, secrets, or implementation details are included.</p>
+  <h2>DevSecOps Workflow</h2>
+  <p class="small">Security testing and validation integrated throughout the CI/CD pipeline to support secure software delivery.</p>
+
   <div class="steps">
     <div class="step">Commit</div><div class="arrow">→</div>
     <div class="step">Pull Request</div><div class="arrow">→</div>
@@ -99,21 +113,21 @@ ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.75}
 
 <section class="two">
   <div class="card">
-    <h3>Threat Modelling in Practice</h3>
+    <h3>Threat Modelling</h3>
     <ul>
       <li>Identify assets, data flows and trust boundaries</li>
       <li>Review authentication, authorization and business logic risks</li>
-      <li>Define mitigations before implementation</li>
-      <li>Track actions through engineering delivery</li>
+      <li>Define security requirements and practical mitigations early</li>
+      <li>Track remediation actions through engineering delivery</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Security Tooling Examples</h3>
+    <h3>Security Tooling</h3>
     <ul>
-      <li>GitHub Actions / Bitbucket-style pipeline controls</li>
-      <li>CodeQL, Semgrep, SonarQube, OWASP ZAP</li>
-      <li>SCA, dependency scanning, secret detection</li>
+      <li>GitHub Actions and Bitbucket-style pipeline controls</li>
+      <li>CodeQL, Semgrep, SonarQube and OWASP ZAP</li>
+      <li>Software composition analysis and secret detection</li>
       <li>AWS/GCP security controls and IAM hardening</li>
     </ul>
   </div>
@@ -138,28 +152,28 @@ ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.75}
   <div class="grid">
     <div class="card">
       <h3>Security</h3>
-      <p>CompTIA Security+ CE<br>OWASP Top 10<br>PCI DSS<br>ISO 27001</p>
+      <p>CompTIA Security+ CE<br>Cyber Security Engineer Level 4<br>OWASP Top 10<br>PCI DSS<br>ISO 27001</p>
     </div>
 
     <div class="card">
       <h3>Cloud & Identity</h3>
-      <p>AWS Certified Cloud Practitioner<br>Google Workspace Administration<br>IAM & Identity Security</p>
+      <p>AWS Certified Cloud Practitioner<br>Google Workspace Administration<br>IAM & Identity Security<br>Cloud Security Fundamentals</p>
     </div>
 
     <div class="card">
-      <h3>Current Learning</h3>
-      <p>HTB Academy<br>Security Automation<br>Threat Modelling<br>Advanced Application Security</p>
+      <h3>Engineering & Automation</h3>
+      <p>Security Automation<br>CI/CD Security<br>Threat Modelling<br>Advanced Application Security</p>
     </div>
   </div>
 </section>
 
 <section class="block">
-  <h2>Generic Metrics & Outcomes</h2>
+  <h2>Security Outcomes</h2>
   <div class="kpis">
-    <div class="kpi"><strong>Earlier</strong>vulnerability detection</div>
-    <div class="kpi"><strong>Reduced</strong>manual review effort</div>
-    <div class="kpi"><strong>Improved</strong>developer feedback</div>
-    <div class="kpi"><strong>Greater</strong>security visibility</div>
+    <div class="kpi"><strong>Earlier</strong>risk detection</div>
+    <div class="kpi"><strong>Stronger</strong>security visibility</div>
+    <div class="kpi"><strong>Faster</strong>developer feedback</div>
+    <div class="kpi"><strong>Scalable</strong>security controls</div>
   </div>
 </section>
 
@@ -171,3 +185,4 @@ ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.75}
 </div>
 </body>
 </html>
+```
