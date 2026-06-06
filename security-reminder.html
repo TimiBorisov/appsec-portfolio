@@ -7,14 +7,12 @@
 
 <title>Security Reminder | Tihomir Borisov</title>
 
-<meta name="description" content="A quick security reminder before continuing to the CV of Tihomir Borisov, Application Security Engineer.">
+<meta name="description" content="A quick security awareness reminder before continuing to the CV of Tihomir Borisov, Application Security Engineer.">
 
 <style>
-
 :root{
 --bg:#070b12;
---panel:#101827;
---card:#172033;
+--card:#101827;
 --text:#e5e7eb;
 --muted:#a8b3c7;
 --blue:#38bdf8;
@@ -22,9 +20,7 @@
 --green:#22c55e;
 }
 
-*{
-box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
 margin:0;
@@ -74,7 +70,7 @@ margin:0 0 20px;
 }
 
 .rule{
-margin:35px 0;
+margin:32px 0;
 padding:25px;
 border-radius:20px;
 background:#0e1729;
@@ -82,7 +78,7 @@ border:1px solid var(--border);
 }
 
 .rule-title{
-font-size:22px;
+font-size:24px;
 font-weight:800;
 color:white;
 margin-bottom:15px;
@@ -95,8 +91,8 @@ font-weight:700;
 }
 
 .checklist{
-max-width:420px;
-margin:35px auto;
+max-width:450px;
+margin:32px auto;
 text-align:left;
 font-size:18px;
 line-height:2;
@@ -104,7 +100,7 @@ color:var(--text);
 }
 
 .quote{
-margin:35px auto;
+margin:32px auto;
 padding:24px;
 max-width:700px;
 border-left:4px solid var(--blue);
@@ -113,6 +109,23 @@ border-radius:16px;
 font-size:22px;
 font-weight:700;
 line-height:1.6;
+color:white;
+}
+
+.url-note{
+margin:28px auto;
+padding:22px;
+max-width:760px;
+border-radius:16px;
+background:#0e1729;
+border:1px solid var(--border);
+font-size:17px;
+line-height:1.8;
+color:var(--muted);
+text-align:left;
+}
+
+.url-note strong{
 color:white;
 }
 
@@ -148,36 +161,18 @@ font-size:15px;
 }
 
 @media(max-width:768px){
-
-.card{
-padding:30px;
+.card{padding:30px}
+h1{font-size:42px}
+p{font-size:18px}
+.quote{font-size:18px}
+.emoji{font-size:56px}
 }
-
-h1{
-font-size:42px;
-}
-
-p{
-font-size:18px;
-}
-
-.quote{
-font-size:18px;
-}
-
-.emoji{
-font-size:56px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <div class="container">
-
 <div class="card">
 
 <div class="emoji">😄</div>
@@ -193,15 +188,10 @@ Before you continue, remember:
 </p>
 
 <div class="rule">
-
-<div class="rule-title">
-Rule #1 of Cybersecurity
-</div>
-
+<div class="rule-title">Rule #1 of Cybersecurity</div>
 <div class="rule-text">
 Never assume a link is safe just because it looks legitimate.
 </div>
-
 </div>
 
 <div class="checklist">
@@ -216,8 +206,23 @@ Attackers count on trust.<br>
 Security professionals rely on verification.
 </div>
 
+<div class="url-note">
+<strong>Security Observation:</strong><br><br>
+
+Many users click links without verifying where they lead.
+
+In this example, the URL clearly contains
+<strong>security-reminder.html</strong>
+rather than
+<strong>cv.html</strong>.
+
+A quick review of the destination before clicking is one of the simplest and most effective security habits you can build.
+
+Whether reviewing emails, messages, documents or websites, always verify before you trust.
+</div>
+
 <div class="safe">
-Good news: This one is safe.
+Good news: this link leads exactly where it claims to.
 </div>
 
 <a href="cv.html" class="btn">
@@ -229,7 +234,6 @@ Security-first mindset. Always.
 </div>
 
 </div>
-
 </div>
 
 </body>
