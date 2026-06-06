@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tihomir Borisov | Application Security Portfolio</title>
+<style>
+:root{
+  --bg:#0b1220; --panel:#111827; --card:#172033; --text:#e5e7eb; --muted:#9ca3af;
+  --blue:#38bdf8; --green:#22c55e; --border:#263348;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at top,#13233f,#070b12 60%);color:var(--text)}
+.wrap{max-width:1120px;margin:auto;padding:42px 22px}
+.hero{border:1px solid var(--border);background:linear-gradient(135deg,#111827,#0f172a);border-radius:28px;padding:42px;box-shadow:0 25px 80px #0008}
+.badge{display:inline-block;border:1px solid #2563eb;background:#0b3b5f;color:#bdefff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px}
+h1{font-size:44px;line-height:1.05;margin:18px 0 10px}
+.subtitle{font-size:19px;color:var(--muted);max-width:820px;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.card{background:rgba(23,32,51,.9);border:1px solid var(--border);border-radius:22px;padding:22px}
+.card h3{margin:0 0 10px;color:white}
+.card p{color:var(--muted);line-height:1.5}
+.flow{margin-top:28px;background:#0c1424;border:1px solid var(--border);border-radius:24px;padding:24px}
+.steps{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.step{padding:12px 14px;border-radius:14px;background:#111d32;border:1px solid #2d405e;font-weight:700}
+.arrow{align-self:center;color:var(--blue);font-weight:900}
+.section{margin-top:34px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.7}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{border-radius:18px;background:#0e1729;border:1px solid var(--border);padding:18px}
+.kpi strong{font-size:26px;color:var(--green)}
+.footer{margin-top:34px;color:var(--muted);font-size:13px}
+@media(max-width:850px){.grid,.two,.kpis{grid-template-columns:1fr}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="badge">Application Security • DevSecOps • Cloud Security</span>
+    <h1>Security built into software delivery, not bolted on at the end.</h1>
+    <p class="subtitle">A concise AppSec portfolio by <b>Tihomir Borisov</b>, showing how secure SDLC, CI/CD security testing, threat modelling, and cloud security controls can support engineering teams without slowing delivery.</p>
+    <div class="grid">
+      <div class="card"><h3>AppSec</h3><p>Secure design, vulnerability management, security testing, and practical developer enablement.</p></div>
+      <div class="card"><h3>DevSecOps</h3><p>SAST, SCA, secret detection, container scanning, and DAST integrated into delivery workflows.</p></div>
+      <div class="card"><h3>Cloud Security</h3><p>AWS/GCP security controls, IAM, secure configuration, and operational security alignment.</p></div>
+    </div>
+  </div>
+
+  <div class="flow">
+    <h2>Example CI/CD Security Workflow</h2>
+    <p style="color:var(--muted)">Generic workflow, safe to share publicly. No company systems, names, secrets, or implementation details are included.</p>
+    <div class="steps">
+      <div class="step">Commit</div><div class="arrow">→</div>
+      <div class="step">Pull Request</div><div class="arrow">→</div>
+      <div class="step">SAST</div><div class="arrow">→</div>
+      <div class="step">SCA</div><div class="arrow">→</div>
+      <div class="step">Secrets</div><div class="arrow">→</div>
+      <div class="step">Container Scan</div><div class="arrow">→</div>
+      <div class="step">DAST</div><div class="arrow">→</div>
+      <div class="step">Deploy</div>
+    </div>
+  </div>
+
+  <div class="section two">
+    <div class="card">
+      <h3>Threat Modelling in Practice</h3>
+      <ul>
+        <li>Identify assets, data flows, and trust boundaries</li>
+        <li>Review authentication, authorization, and business logic risks</li>
+        <li>Define mitigations before implementation</li>
+        <li>Track actions through engineering delivery</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Security Tooling Examples</h3>
+      <ul>
+        <li>GitHub Actions / Bitbucket-style pipeline controls</li>
+        <li>CodeQL, Semgrep, SonarQube, OWASP ZAP</li>
+        <li>SCA, dependency scanning, secret detection</li>
+        <li>AWS/GCP security controls and IAM hardening</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Generic Metrics & Outcomes</h2>
+    <div class="kpis">
+      <div class="kpi"><strong>Earlier</strong><br>risk detection</div>
+      <div class="kpi"><strong>Less</strong><br>manual review effort</div>
+      <div class="kpi"><strong>Better</strong><br>developer feedback</div>
+      <div class="kpi"><strong>More</strong><br>security visibility</div>
+    </div>
+  </div>
+
+  <div class="footer">Prepared as a public-safe AppSec portfolio asset. Replace this footer with your website/contact details when ready.</div>
+</div>
+</body>
+</html>
